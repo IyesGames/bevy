@@ -4,7 +4,7 @@ use bevy_reflect::Reflect;
 /// A rectangle defined by two points. There is no defined origin, so 0,0 could be anywhere
 /// (top-left, bottom-left, etc)
 #[repr(C)]
-#[derive(Default, Clone, Copy, Debug, Reflect)]
+#[derive(Default, Clone, Copy, PartialEq, Debug, Reflect)]
 pub struct Rect {
     /// The beginning point of the rect
     pub min: Vec2,
