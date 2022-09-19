@@ -1,7 +1,8 @@
 use bevy_ecs::component::Component;
-use bevy_math::{Rect, Vec2};
+use bevy_math::Vec2;
 use bevy_reflect::Reflect;
 use bevy_render::color::Color;
+use crate::Rect;
 
 #[derive(Component, Debug, Default, Clone, Reflect)]
 #[repr(C)]
